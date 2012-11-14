@@ -204,3 +204,6 @@ c:\users\mina.sabbaghian\documents\visual studio 2012\Projects\CustomMessageBox\
 c:\users\mina.sabbaghian\documents\visual studio 2012\Projects\CustomMessageBox\CustomMessageBox\bin\Debug\fr-CA\IQ.Core.Common.resources.dll
 c:\users\mina.sabbaghian\documents\visual studio 2012\Projects\CustomMessageBox\CustomMessageBox\obj\Debug\General.baml
 c:\users\mina.sabbaghian\documents\visual studio 2012\Projects\CustomMessageBox\CustomMessageBox\bin\Debug\WPFToolkit.dll
+C:\Users\mina.sabbaghian\git\CustomMessageBox\CustomMessageBox\bin\Debug\CustomMessageBox.exe.config
+C:\Users\mina.sabbaghian\git\CustomMessageBox\CustomMessageBox\obj\Debug\CustomMessageBox.exe
+C:\Users\mina.sabbaghian\git\CustomMessageBox\CustomMessageBox\obj\Debug\CustomMessageBox.pdb
