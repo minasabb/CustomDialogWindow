@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetailiQ.Integration.VMI.ConfigurationUtilities</name>
+    </assembly>
+    <members>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.GetConfigurationData">
+            <summary>
+            Retrieve any configuration data available from the web service.
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.SaveStoreData(System.Int32,System.Guid,System.Guid,System.Boolean,System.Int32,System.Int32,System.String)">
+            <summary>
+            Saves the store configuration to the configuration dataset
+            </summary>
+            <param name="storeID">ID of the store to be saved</param>
+            <param name="companyID">ID of the company the store belongs to</param>
+            <param name="vendorID">ID of the vendor to save the data for</param>
+            <param name="storeEnabled">Whether or not the store is enabled for VMI</param>
+            <param name="billToStoreID">The store to be billed for VMI invoices</param>
+            <param name="shipToStoreID">The store products should be shipped to</param>
+            <param name="vendorAccountNumber">The account number of the store (assigned by the vendor)</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.SaveStoreConfig(RetailiQ.Integration.VMI.Transport.Setup.VendorCompanyStoreConfiguration,System.Int32,System.Guid,System.Guid,System.Boolean,System.Int32,System.Int32,System.String)">
+            <summary>
+            Sets the appropriate values for the store configuration
+            </summary>
+            <param name="store">The row for the data to be saved in (new or updated)</param>
+            <param name="storeID">ID of the store to be configured</param>
+            <param name="companyID">ID of the company the store belongs to</param>
+            <param name="vendorID">ID of the vendor for the data to be saved for</param>
+            <param name="storeEnabled">Whether or not the store is enabled</param>
+            <param name="billToStoreID">ID of the store to be billed for VMI invoices</param>
+            <param name="shipToStoreID">ID of the store the products will be shipped to</param>
+            <param name="vendorAccountNumber">The account number for the store (assigned by the vendor)</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.GetVendorCompanyStoreConfig(System.Int32,System.Guid,System.Guid)">
+            <summary>
+            Gets the configuration data for the vendor/company/store relationship
+            </summary>
+            <param name="storeID">ID of the store to retrieve data for</param>
+            <param name="companyID">ID of the company the store belongs to</param>
+            <param name="vendorID">ID of the vendor the configuration data belongs to</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.GetVendorCompanyConfig(System.Guid,System.Guid)">
+            <summary>
+            Gets the configuration data for the vendor/company relationship
+            </summary>
+            <param name="companyID">ID of the company to retrieve data for</param>
+            <param name="vendorID">ID of the vendor the configuration data belongs to</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.GetCompanyConfig(System.Guid)">
+            <summary>
+            Gets the configuration data for the company based on the company ID
+            </summary>
+            <param name="companyID">ID of the company to retrieve data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.GetCompanyStoreInformation(System.Int32,System.Guid)">
+            <summary>
+            Gets store information for the identified store for a company
+            </summary>
+            <param name="storeID">ID of the store to get information for</param>
+            <param name="companyID">ID of the company the store belongs to</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.ResetConfigurationData">
+            <summary>
+            Clears the configuration dataset and retrieves a fresh dataset from the database
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.InitializeCompanyConfigIfNone(System.Guid,System.Guid,System.String,System.String,System.String)">
+            <summary>
+            Determines if the company requires an initial company configuration and relationship with the selected vendor
+            </summary>
+            <param name="companyID">ID of the company that should have a relationship with a vendor</param>
+            <param name="vendorID">ID of the vendor to check the relationship for</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.CreateCompanyVendorRelationship(System.Guid,System.Guid)">
+            <summary>
+            Create the company to vendor relationship
+            </summary>
+            <param name="companyID">The company ID</param>
+            <param name="vendorID">The vendor ID</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.CreateCompanyConfiguration(System.Guid,System.String)">
+            <summary>
+            Create an initial company configuration
+            </summary>
+            <param name="companyID">The company ID</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.SaveConfigurationToDatabase">
+            <summary>
+            Saves the configuration data to the database through the configuration web service
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.CreateVmiSetupServiceProxy">
+            <summary>
+            Creates proxy for VMI setup service 
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.VMIConfigurationManager.GetStoreInformation">
+            <summary>
+            if store information doesn't exist for this company, gather it and store it.
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.Validation.ValidateUIData(System.String@,System.Windows.Forms.CheckBox,System.Windows.Forms.TextBox,System.Windows.Forms.Label,System.Windows.Forms.Label,System.Windows.Forms.Label)">
+            <summary>
+            Validate the users input before saving the record
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.Validation.ValidateAccountNumber(System.Windows.Forms.TextBox,System.Windows.Forms.Label)">
+            <summary>
+            Validate the vendor account number
+            </summary>
+            <param name="account">TextBox containing the account number</param>
+            <param name="store">Label containing the store name</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.Validation.ValidateBillToLocation(System.Windows.Forms.Label,System.Windows.Forms.Label)">
+            <summary>
+            Validate the Bill To location
+            </summary>
+            <param name="label">Label containing the tag and text of the bill to location</param>
+            <param name="store">Label containing the store name</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.Validation.ValidateShipToLocation(System.Windows.Forms.Label,System.Windows.Forms.Label)">
+            <summary>
+            Validate the Ship To location
+            </summary>
+            <param name="label">Label containing the tag and text of the ship to location</param>
+            <param name="store">Label containing the store name</param>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.Validation.CheckLabelTagAndText(System.Windows.Forms.Label)">
+            <summary>
+            Checks a label for a proper tag and some text in the label
+            </summary>
+            <param name="label">Label control to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.VMI.ConfigurationUtilities.Validation.ValidateDataForModel">
+            <summary>
+            Validate the data before sending to the database
+            </summary>
+        </member>
+    </members>
+</doc>

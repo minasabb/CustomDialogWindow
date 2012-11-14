@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Enterprise.PaymentProcessing.IApplicationServices</name>
+    </assembly>
+    <members>
+        <member name="M:IQ.Enterprise.PaymentProcessing.IApplicationServices.IPaymentProcessingConfigurationControlService.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.IApplicationServices.IPaymentProcessingConfigurationControlService.ControlClose">
+            <summary>
+            Closes the parent form.
+            </summary>
+        </member>
+    </members>
+</doc>

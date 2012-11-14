@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Core.Integration.Common</name>
+    </assembly>
+    <members>
+        <member name="M:IQ.Core.Integration.Exceptions.IntegrationDataException.GetDataSetError(System.Data.DataSet)">
+            <summary>
+            Gets the data set error.
+            </summary>
+            <param name="voDataSet">The vo data set.</param>
+            <returns></returns>
+        </member>
+        <member name="T:IQ.Core.Integration.IntegrationTypeEnum">
+            <summary>
+            *** Important Note ***
+            Before adding IntegrationTypes, check with Ops Platform team to see if IQ.Ops.Core.Common.Constants also needs
+            to be updated. Adding/editingIntegrationTypeEnum could affect/break their functionality.
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Integration.CursorStatus">
+            <summary>
+            This object will manage the cursor.  If implemented within a using clause
+            it will reset the cursor back to what it was when entered.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Integration.CursorStatus.#ctor(System.Windows.Forms.Cursor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.CursorStatus"/> class.
+            </summary>
+            <param name="newCursor">The new cursor.</param>
+        </member>
+        <member name="T:IQ.Core.Integration.Transport.IntegrationProduct">
+            <summary>
+            This class is used to query the Integration Manager to determine if it's an integration product
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Integration.Transport.IntegrationProduct.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.Transport.IntegrationProduct"/> class.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Integration.Transport.IntegrationProduct.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.Transport.IntegrationProduct"/> class.
+            </summary>
+            <param name="productIdentifier">The product identifier.</param>
+            <param name="productType">Type of the product.</param>
+        </member>
+        <member name="M:IQ.Core.Integration.Transport.IntegrationProduct.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.Transport.IntegrationProduct"/> class.
+            </summary>
+            <param name="productIdentifier">The product identifier.</param>
+            <param name="productType">Type of the product.</param>
+            <param name="refNumber">A reference to another object</param>
+        </member>
+        <member name="M:IQ.Core.Integration.Transport.IntegrationProduct.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.Transport.IntegrationProduct"/> class.
+            </summary>
+            <param name="productIdentifier">The product identifier.</param>
+            <param name="productType">Type of the product.</param>
+            <param name="refNumber">A reference to another object</param>
+            /// <param name="refNumber">A reference to the third-party provider transaction</param>
+        </member>
+        <member name="M:IQ.Core.Integration.Transport.IntegrationProduct.#ctor(System.String,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.Transport.IntegrationProduct"/> class.
+            </summary>
+            <param name="productIdentifier"></param>
+            <param name="productType"></param>
+            <param name="refNumber"></param>
+            <param name="providerRefNumber"></param>
+            <param name="refAssociationNumber"></param>
+        </member>
+        <member name="P:IQ.Core.Integration.Transport.IntegrationProduct.ProductIdentifier">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>The product identifier.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.Transport.IntegrationProduct.ProductType">
+            <summary>
+            Gets or sets the type of the product.
+            </summary>
+            <value>The type of the product.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.Transport.IntegrationProduct.ActivateIntegration">
+            <summary>
+            Gets or sets a value indicating whether [activate integration].
+            </summary>
+            <value><c>true</c> if [activate integration]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.Transport.IntegrationProduct.RefNumber">
+            <summary>
+            Gets or sets the reference number.
+            </summary>
+            <value>The reference number.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.Transport.IntegrationProduct.ProviderRefNumber">
+            <summary>
+            A number assigned by the third party provider, most often used as the serial number on the saleInvoiceProduct
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Integration.Transport.IntegrationProduct.RefAssociationNumber">
+            <summary>
+            The number of the sale invoice product link group that this item should be a part of
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Integration.IntegrationSettings.IntegrationSettingsTransport">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Integration.IntegrationSettings.IntegrationSettingControlAttribute">
+            <summary>
+            Title: Usually the caption that the user sees
+            FieldName: A keyword that relates back to a table column or, in the case of a button, an operation type
+            TableName: The name of the table that fieldname is in
+            PrimaryKeyColumn: Needed when an operation performed on one column must affect another column. Use column groupings for this purpose
+            SettingCategory: Must be CompanyWide, Location, or Plan/Item. Add as needed by the integration type. Try not to force a new type into and existing Category. It'll confuse things.
+            EditorType: The type of control used on the settings form to display the setting
+            ColumnType: Predefined column type for common operations. Used in column grouping with PrimaryKeyColumn
+            Visible: Whether the control is visible or altered by another control (or used from an invisible position)
+            ReadOnly: Whether the field will be used for reference or direct input
+            GroupName: Used in radiobuttons and columnGrouping
+            SubTitle: Used for radiobuttons and organization
+            ColumnWidth: control/column width
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Integration.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Integration.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Integration.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Integration.Properties.Resources.CleanUpServiceEmployeeName">
+            <summary>
+              Looks up a localized string similar to iQmetrixCleanupService.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Integration.ProviderBase.#ctor(System.Guid,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Integration.ProviderBase"/> class.
+            </summary>
+            <param name="providerID">The provider ID.</param>
+            <param name="termsAndConditions">The terms and conditions.</param>
+        </member>
+        <member name="P:IQ.Core.Integration.ProviderBase.IntegrationType">
+            <summary>
+            Gets the type of the integration.
+            </summary>
+            <value>The type of the integration.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.ProviderBase.ProviderData">
+            <summary>
+            Gets the provider data.
+            </summary>
+            <value>The provider data.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IQ.Core.Integration.ProviderBase.ProviderID" -->
+        <member name="P:IQ.Core.Integration.ProviderBase.TermsAndConditions">
+            <summary>
+            Gets the terms and conditions.
+            </summary>
+            <value>The terms and conditions.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.ProviderBase.TransactionProducts">
+            <summary>
+            Gets the transaction products.
+            </summary>
+            <value>The transaction products.</value>
+        </member>
+        <member name="M:IQ.Core.Integration.SoapFaults.IProviderSoapFault.ToXmlNode(System.Xml.XmlDocument)">
+            <summary>
+            Converts this instance of IProviderSoapFault to an XmlNode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IQ.Core.Integration.SoapFaults.IProviderSoapFault.FaultCode">
+            <summary>
+            Gets the fault code for this soap fault.
+            </summary>
+            <value>The fault code.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.SoapFaults.IProviderSoapFault.Message">
+            <summary>
+            Gets the message for this soap fault.
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="M:IQ.Core.Integration.SoapFaults.IProviderSoapFaultFactory.CreateUsing(System.Web.Services.Protocols.SoapException)">
+            <summary>
+            Creates an IProviderSoapFault for a given SoapException
+            </summary>
+            <param name="exception">The exception from which teh soap fault is to be created.</param>
+            <returns>Null if hte IProviderSoapFault fails to be created from the SoapException; otherwise an IProviderSoapFault
+            for this particular concrete Provider</returns>
+        </member>
+        <member name="M:IQ.Core.Integration.Utils.RipProps(System.Object)">
+            <summary>
+             Method to rip thru properties of an object and plug name/value into a string.
+            Just handles simple types of classes and sub-classes.  If one of the properties
+            is a collection or any other "system" type, it just gets the tostring value of that class
+            </summary>
+            <param name="obj">Any object that has properties</param>
+            <returns>A string representation of the object and it's properties in a 'not quite' XML format.</returns>
+        </member>
+        <member name="M:IQ.Core.Integration.Utils.GetDataContractXML(System.Object)">
+            <summary>
+            Gets the XML markup of the graph from an object if that object is based on a dataContract (i.e. web service object, WCF object)
+            </summary>
+            <param name="obj"></param>
+            <returns>string representing the object XML</returns>
+        </member>
+        <member name="M:IQ.Core.Integration.Utils.ToXMLString(System.Object,System.Boolean)">
+            <summary> 
+            Serialize an object as an XML string. 
+            </summary> 
+            <param name="o">The object to serialize.</param> 
+            <param name="omitXmlDeclaration">optional parameter to omit the xml declaration</param>
+            <returns>The object, serialized as an XML string.</returns> 
+        </member>
+    </members>
+</doc>

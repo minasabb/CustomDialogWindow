@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetailiQ.Integration.ERecycle.Provider</name>
+    </assembly>
+    <members>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.#ctor(System.Guid,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.ShowReport(System.Int32)">
+            <summary>
+            Shows the ERecycle Reports
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.CompleteIntegration">
+            <summary>
+            Completes the integration.
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.GetBillingTransactions">
+            <summary>
+            Gets the Billing Transactions from the TradeInData
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.GetiQmetrixProfitForTransaction(RetailiQ.Integration.BillingService.Transport.BillingTransaction)">
+            <summary>
+            Gets the the expected profit from a transaction
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.GetParameter(System.String)">
+            <summary>
+            Gets the parameter.
+            </summary>
+            <param name="parameterName">Name of the parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.GetCustomData">
+            <summary>
+            Gets the custom data.
+            </summary>
+            <returns></returns>
+            <value>The custom data.</value>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.GetTradeinQuote">
+             <summary>
+             Gets the tradein quote.
+             </summary>
+            <exception>.Net.WebException and Exception are handled</exception>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.UpdateConfiguration(System.Guid,RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData)">
+            <summary>
+            Updates the configuration.
+            </summary>
+            <param name="providerID">The provider ID.</param>
+            <param name="configurationDS">The configuration DS.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.Update">
+            <summary>
+            Updates this instance.
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.GetIntegrationReportForm(System.Int32)">
+            <summary>
+            Returns an integration report form of the given type
+            </summary>
+            <param name="reportType">0: Discrepancy Report, 1: Remote Activity Report</param>
+            <returns></returns>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.TradeInData">
+            <summary>
+            Gets the trade in data.
+            </summary>
+            <value>The trade in data.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.ProviderData">
+            <summary>
+            Gets the provider data.
+            </summary>
+            <value>The provider data.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.SmallLogo">
+            <summary>
+            Gets the 16 x 16 logo for this provider.
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.MediumLogo">
+            <summary>
+            Gets the 32 x 32 logo for this provider.
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.BannerLogo">
+            <summary>
+            Gets the logo for this provider that is ideal for banner type placements.
+            Maximum width/height of this image is 300 x 70
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.PrintableLogo">
+            <summary>
+            Gets the logo for this provider that is ideal for printouts, such as invoices.
+            Maximum width/height of this image is 216 x 72
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.SmallIcon">
+            <summary>
+            Gets the 16 x 16 icon for this provider.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.ProviderID" -->
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.IntegrationType">
+            <summary>
+            Gets the type of the integration.
+            </summary>
+            <value>The type of the integration.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.CustomData">
+            <summary>
+            Gets the custom data.
+            </summary>
+            <value>The custom data.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Provider.ERecycleProvider.ConfigurationControl">
+            <summary>
+            Gets the configuration control.
+            </summary>
+            <value>The configuration control.</value>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Provider.ERecycleTradeInCarriers.IsTradeInCarrier(System.String)">
+            <summary>
+            Reference IQ.Core.Resources for logo/icon names
+            </summary>
+        </member>
+    </members>
+</doc>

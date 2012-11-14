@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Core.Configuration.Common</name>
+    </assembly>
+    <members>
+        <member name="P:IQ.Core.Configuration.PersonalizationSettings.TimeStamp">
+            <summary>
+            Gets or sets the time stamp.
+            </summary>
+            <value>The time stamp.</value>
+        </member>
+        <member name="T:IQ.Core.Configuration.ConfigManager">
+            <summary>
+            Provides a common entry point for all system settings regardless of machine or user based.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.ConfigManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:SystemSettings"/> class.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.ConfigManager.AsyncSave">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.ConfigManager.Reload">
+            <summary>
+            Reset the configuration settings so it will reload again
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.ConfigManager.ConfigFactory">
+            <summary>
+            Gets or sets the config factory.
+            </summary>
+            <value>The config factory.</value>
+        </member>
+        <member name="P:IQ.Core.Configuration.ConfigManager.Current">
+            <summary>
+            Gets the current instance of the settings
+            </summary>
+            <value>The current.</value>
+        </member>
+        <member name="P:IQ.Core.Configuration.ConfigManager.UserPersonalizationSettings">
+            <summary>
+            Gets the user personalization settings.
+            </summary>
+            <value>The user personalization settings.</value>
+        </member>
+        <member name="M:IQ.Core.Configuration.Converters.ConvertRegistryUserSettings.Commit">
+            <summary>
+            Commits these settings.  I originally had this empty out the registry settings, but if 3.8 needs to co-exist with 4.x, it cannot
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Converters.ConvertRegistryWorkstationSettings.Commit">
+            <summary>
+            Commits these settings.  I originally had this empty out the registry settings, but if 3.8 needs to co-exist with 4.x, it cannot
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.DefaultConfigFactory">
+            <summary>
+            This DefaultConfigFactory exists solely for the purpose of presenting a better exception to the programmer
+            if they forget to set the config factory for the configuration subsystem
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.IConfigFactory">
+            <summary>
+            This interface defines what is needed to be implemented for a configuration factory.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.IConfigFactory.OneTimeConversion">
+            <summary>
+            Called when starting up RQ - it should contain code to convert from previous verions of configuration items.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.IConfigFactory.SetActivationService(IQ.Framework.Configuration.ApplicationServer)">
+            <summary>
+            Allows the caller to override which activation service will be used when
+            constructing and populating IConfigSettings objects. If this function is
+            not called, the default setting from App.config is used instead.
+            </summary>
+            <param name="activationService"></param>
+        </member>
+        <member name="M:IQ.Core.Configuration.IConfigFactory.GetWorkstationSettings">
+            <summary>
+            Gets the workstation settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.IConfigFactory.GetCompanySettings">
+            <summary>
+            Gets the company settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.IConfigFactory.GetUserSettings">
+            <summary>
+            Gets the user settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.DefaultConfigFactory.GetActivationSettings">
+            <summary>
+            Gets the activation settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.DefaultConfigFactory.GetWorkstationSettings">
+            <summary>
+            Gets the workstation settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.DefaultConfigFactory.GetCompanySettings">
+            <summary>
+            Gets the company settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.DefaultConfigFactory.GetUserSettings">
+            <summary>
+            Gets the user settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.DefaultConfigFactory.Save(IQ.Core.Configuration.CompanySettings)">
+            <summary>
+            Gets the updater settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IQ.Core.Configuration.WorkstationEnvironmentSetting.LastUserName">
+            <summary>
+            The username that was last used to login
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.WorkstationEnvironmentSetting.LastLocationID">
+            <summary>
+            Gets the last location ID. - This is obsolete - use the ClientActivationModel
+            </summary>
+            <value>The last location ID.</value>
+        </member>
+        <member name="P:IQ.Core.Configuration.WorkstationEnvironmentSetting.DefaultLocationID">
+            <summary>
+            Gets or sets the default location ID.
+            </summary>
+            <value>The default location ID.</value>
+        </member>
+        <member name="P:IQ.Core.Configuration.WorkstationEnvironmentSetting.DisableHardwareAcceleration">
+            <summary>
+            Gets or sets a value indicating whether [disable hardware acceleration].
+            This setting will make all windows render in "Software Only" mode.
+            </summary>		
+        </member>
+        <member name="M:IQ.Core.Configuration.PrinterSetting.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Configuration.PrinterSetting"/> class.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.PrinterSetting.#ctor(System.String,IQ.Core.Common.Constants.PrinterUsageDefaultValues)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Configuration.PrinterSetting"/> class.
+            </summary>
+            <param name="printerUsageType">Type of the printer usage.</param>
+            <param name="defaults">The default printer settings.</param>
+        </member>
+    </members>
+</doc>

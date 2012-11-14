@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetailiQ.Integration.CarrierParser.IApplicationServices</name>
+    </assembly>
+    <members>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierHtmlParser.HasErrors">
+            <summary>
+            Gets a value indicating whether this instance experienced any problems trying to locate fields<see cref="!:ParseValue"/>.
+            </summary>
+            <value>
+            	<c>true</c> if one or more fields were not found; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierHtmlParser.FieldsNotFound">
+            <summary>
+            Gets the collection of fields that it failed to locate.
+            </summary>
+            <value>The failed expressions.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierHtmlParser.ParseExceptionMessage">
+            <summary>
+            Gets a message detailing which regular expressions failed to match
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.CarrierParser.CarrierRegexParser.MatchRegex(System.String)">
+            <summary>
+            Attempts to match the regex using the current ParseValue using RegexOptions.Compiled.
+            If the regex fails to match, the regex will be added to the FailedExpressions collection.
+            </summary>
+            <param name="regex">The regex that will be used to attempt the match.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.CarrierParser.CarrierRegexParser.MatchesRegex(System.String)">
+            <summary>
+            Returns a sequence of successful non-overlapping matches.
+            </summary>
+            <param name="regex">The regular expression to match</param>
+            <returns>A list of successful non-overlapping matches</returns>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.HasErrors">
+            <summary>
+            Gets a value indicating whether this instance experienced any problems trying to match <see cref="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.ParseValue"/>.
+            </summary>
+            <value>
+            	<c>true</c> if one or more regular expressions failed to match <see cref="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.ParseValue"/>; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.FailedExpressions">
+            <summary>
+            Gets the collection of regular expressions that failed to match.
+            </summary>
+            <value>The failed expressions.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.ParserType">
+            <summary>
+            Gets the type of the parser.
+            </summary>
+            <value>The type of the parser.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.ParseValue">
+            <summary>
+            Gets the value this instance will attempt to match against.
+            </summary>
+            <value>The parse value.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierRegexParser.ParseExceptionMessage">
+            <summary>
+            Gets a message detailing which regular expressions failed to match
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.CarrierParser.CarrierXPathParser.MatchXPath(System.String)">
+            <summary>
+            Attempts to match the regex using the current ParseDocument.
+            If the regex fails to match, the regex will be added to the FailedExpressions collection.
+            </summary>
+            <param name="xpath">The xpath query that will be used to attempt the match.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetailiQ.Integration.CarrierParser.CarrierXPathParser.MatchXPath(System.String,System.Boolean)">
+            <summary>
+            Matches the X path, will optionally ignore case.
+            </summary>
+            <param name="xpath">The xpath.</param>
+            <param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+            <returns></returns>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.HasErrors">
+            <summary>
+            Gets a value indicating whether this instance experienced any problems trying to match <see cref="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.ParseDocument"/>.
+            </summary>
+            <value>
+            	<c>true</c> if one or more regular expressions failed to match <see cref="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.ParseDocument"/>; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.FailedXPaths">
+            <summary>
+            Gets the collection of regular expressions that failed to match.
+            </summary>
+            <value>The failed expressions.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.ParserType">
+            <summary>
+            Gets the type of the parser.
+            </summary>
+            <value>The type of the parser.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.ParseDocument">
+            <summary>
+            Gets the value this instance will attempt to match against.
+            </summary>
+            <value>The parse value.</value>
+        </member>
+        <member name="P:RetailiQ.Integration.CarrierParser.CarrierXPathParser.ParseExceptionMessage">
+            <summary>
+            Gets a message detailing which regular expressions failed to match
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Core.Reporting.IApplicationServices</name>
+    </assembly>
+    <members>
+        <member name="M:IQ.Core.Reporting.IApplicationServices.Configuration.ICustomizedReportsService.GetCustomizedReportByID(System.Guid)">
+            <summary>
+            Gets the customized report by ID.
+            </summary>
+            <param name="customizedReportID">The customized report ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Reporting.IApplicationServices.Configuration.ICustomizedReportsService.GetCustomizedReportsForUser(System.Int32,IQ.Core.Common.Settings.SystemSettings.Constants.CompanyTreeLevel)">
+            <summary>
+            Gets the customized reports for user.
+            </summary>
+            <param name="userID">The user ID.</param>
+            <param name="userType">Type of the user.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Reporting.IApplicationServices.Configuration.ICustomizedReportsService.Update(IQ.Framework.DAL.DataSurrogate{IQ.Core.Reporting.Transport.Configuration.CustomizedReportsData})">
+            <summary>
+            Updates the specified customized reports data [adds, updates, and deletes].
+            </summary>
+            <param name="customizedReportsData">The customized reports data.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

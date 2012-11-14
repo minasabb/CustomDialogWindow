@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetailiQ.Integration.BillingServices.Transport</name>
+    </assembly>
+    <members>
+        <member name="T:RetailiQ.Integration.BillingService.Transport.BillingTransaction">
+            <summary>
+            BillingTransaction DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransaction.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransaction.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransaction.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransaction.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.BillingTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.ClientID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.CompanyName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.SubscriptionType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.ProviderTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.TradeInItemNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.CustomerCredit">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.ExpectedRebateAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Margin">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.CreatedBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.TransactionType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.TransactionDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.RefundedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.iQmetrixProfit">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransaction.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.BillingService.Transport.BillingTransactions">
+            <summary>
+            BillingTransactions DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.#ctor">
+            <summary>
+             BillingTransactions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.#ctor(System.String)">
+            <summary>
+             BillingTransactions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Add(RetailiQ.Integration.BillingService.Transport.BillingTransaction)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.FindByBillingTransactionID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Remove(RetailiQ.Integration.BillingService.Transport.BillingTransaction)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.BillingTransactionIDColumn">
+            <summary>
+             Returns the defination of the BillingTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.ClientIDColumn">
+            <summary>
+             Returns the defination of the ClientID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.CompanyNameColumn">
+            <summary>
+             Returns the defination of the CompanyName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.SubscriptionTypeColumn">
+            <summary>
+             Returns the defination of the SubscriptionType Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.ProviderTransactionIDColumn">
+            <summary>
+             Returns the defination of the ProviderTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.TradeInItemNumberColumn">
+            <summary>
+             Returns the defination of the TradeInItemNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.CustomerCreditColumn">
+            <summary>
+             Returns the defination of the CustomerCredit Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.ExpectedRebateAmountColumn">
+            <summary>
+             Returns the defination of the ExpectedRebateAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.MarginColumn">
+            <summary>
+             Returns the defination of the Margin Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.CreatedByColumn">
+            <summary>
+             Returns the defination of the CreatedBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.TransactionTypeColumn">
+            <summary>
+             Returns the defination of the TransactionType Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.TransactionDateColumn">
+            <summary>
+             Returns the defination of the TransactionDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.RefundedDateColumn">
+            <summary>
+             Returns the defination of the RefundedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.iQmetrixProfitColumn">
+            <summary>
+             Returns the defination of the iQmetrixProfit Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.BillingService.Transport.BillingTransactions.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+    </members>
+</doc>

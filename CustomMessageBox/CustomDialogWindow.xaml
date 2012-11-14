@@ -1,0 +1,146 @@
+﻿<Window x:Class="CustomMessageBox.CustomDialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Title="CustomDialogWindow"
+    Height="Auto"
+    Width="400"
+    Background="White"
+    SnapsToDevicePixels="True"
+    SizeToContent="Height"
+    WindowStartupLocation="CenterScreen"
+    Margin="0,0,0,0"
+    WindowStyle="None">
+    <Grid
+        Width="Auto"
+        Height="Auto"
+        Margin="10,10,0,10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition
+                Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image
+            HorizontalAlignment="Left"
+            Margin="0,0,10,0"
+            x:Name="imgInstructionIcon"
+            VerticalAlignment="Top"
+            Width="Auto"
+            Height="Auto"
+            Source="CustomDialogInformation.png"
+            Grid.ColumnSpan="1"
+            Grid.Row="0" />
+        <TextBlock
+            HorizontalAlignment="Stretch"
+            Margin="0,0,0,0"
+            x:Name="tbInstructionHeading"
+            VerticalAlignment="Center"
+            Width="Auto"
+            Text="Instruction Heading"
+            TextWrapping="Wrap"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            Grid.RowSpan="1"
+            Style="{DynamicResource MediumBoldTextBlockStyle}" />
+        <TextBlock
+            HorizontalAlignment="Stretch"
+            x:Name="tbInstructionText"
+            Width="Auto"
+            Margin="0,10,0,0"
+            Style="{DynamicResource RegularGrayBoldTextBlockStyle}"
+            Text="Instruction"
+            TextWrapping="Wrap"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            Grid.Row="1"
+            Grid.RowSpan="1" />
+        <TextBlock
+            x:Name="tbAdditionalDetailsText"
+            VerticalAlignment="Stretch"
+            Height="Auto"
+            Style="{DynamicResource RegularGrayTextBlockStyle}"
+            Text="Additional Details Text"
+            TextWrapping="Wrap"
+            Margin="0,10"
+            FontFamily="Arial"
+            Grid.Column="1"
+            Grid.Row="2"
+            Visibility="Collapsed" />
+        <Border
+            Margin="0,20,0,0"
+            VerticalAlignment="Top"
+            Grid.ColumnSpan="2"
+            Grid.Row="3">
+            <DockPanel
+                Margin="0,8,0,8"
+                Width="Auto"
+                Height="Auto">
+
+                <ToggleButton ClipToBounds="False"
+                    HorizontalAlignment="Left"
+                    x:Name="expAdditionalDetails"
+                    VerticalAlignment="Center"
+                    Style="{DynamicResource TextOnlyToggleButtonStyle}"
+                    Content="Show Details" Click="ExpAdditionalDetailsClick"/>
+                <Button
+                    x:Name="btnYes"
+                    Width="60"
+                    Height="Auto"
+                    Content="Yes"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,0"
+                    VerticalAlignment="Center"
+                    Style="{DynamicResource PrimaryBlueButtonStyle}"
+                    DockPanel.Dock="Right"
+                    Click="BtnYesClick" />
+
+                <Button
+                    x:Name="btnOK"
+                    Width="60"
+                    Height="Auto"
+                    Content="OK"
+                    Style="{DynamicResource PrimaryBlueButtonStyle}"
+                    HorizontalAlignment="Right"
+                    Click="BtnOkClick"
+                    Margin="0,0,10,0"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Right" />
+                <Button
+                    x:Name="btnCancel"
+                    Width="60"
+                    Height="Auto"
+                    Style="{DynamicResource SecondaryButtonStyle}"
+                    Content="Cancel" Click="BtnCancelClick"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,0"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Right" />
+
+                <Button
+                    x:Name="btnNo"
+                    Width="60"
+                    Height="Auto"
+                    Content="No" Click="BtnNoClick"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,0"
+                    Style="{DynamicResource SecondaryButtonStyle}"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Right" />
+
+                
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>

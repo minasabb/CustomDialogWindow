@@ -1,0 +1,3459 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetailiQ.Integration.Flipswap.Transport</name>
+    </assembly>
+    <members>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults">
+            <summary>
+            FlipSwapSearchResults DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.#ctor">
+            <summary>
+             FlipSwapSearchResults Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.#ctor(System.String)">
+            <summary>
+             FlipSwapSearchResults Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.FindByModelId(System.Int64)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.selectedModelID">
+            <summary>
+            used to keep track of the selected model in the search
+            Initially implemented this so that the flipswap widget can pass information about the selected model to the flipswap wizard
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.ModelIdColumn">
+            <summary>
+             Returns the defination of the ModelId Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.AsMuchAsPricingColumn">
+            <summary>
+             Returns the defination of the AsMuchAsPricing Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.ImageUrlColumn">
+            <summary>
+             Returns the defination of the ImageUrl Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.ModelNumberColumn">
+            <summary>
+             Returns the defination of the ModelNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.QuickQuotePricingColumn">
+            <summary>
+             Returns the defination of the QuickQuotePricing Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.FriendlyTitleColumn">
+            <summary>
+             Returns the defination of the FriendlyTitle Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResults.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.ContractType">
+            <summary>
+            ContractType DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractType.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractType.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractType.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractType.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.TermType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.TermDescription">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractType.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.ContractTypes">
+            <summary>
+            ContractTypes DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.#ctor">
+            <summary>
+             ContractTypes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.#ctor(System.String)">
+            <summary>
+             ContractTypes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Add(RetailiQ.Integration.Flipswap.Transport.ContractType)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.FindByTermType(System.String)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Remove(RetailiQ.Integration.Flipswap.Transport.ContractType)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractTypes.TermTypeColumn">
+            <summary>
+             Returns the defination of the TermType Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractTypes.TermDescriptionColumn">
+            <summary>
+             Returns the defination of the TermDescription Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.ContractTypes.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer">
+            <summary>
+            FlipSwapAnswer DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.AnswerID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.FlipSwapAnswerID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.QuestionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.AnswerText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers">
+            <summary>
+            FlipSwapAnswers DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.#ctor">
+            <summary>
+             FlipSwapAnswers Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.#ctor(System.String)">
+            <summary>
+             FlipSwapAnswers Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.FindByAnswerID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.AnswerIDColumn">
+            <summary>
+             Returns the defination of the AnswerID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.FlipSwapAnswerIDColumn">
+            <summary>
+             Returns the defination of the FlipSwapAnswerID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.QuestionIDColumn">
+            <summary>
+             Returns the defination of the QuestionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.AnswerTextColumn">
+            <summary>
+             Returns the defination of the AnswerText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswers.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData">
+            <summary>
+            FlipSwapCustomData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.#ctor">
+            <summary>
+            FlipSwapCustomData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            FlipSwapCustomData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.FlipSwapLocationConfigurations">
+            <summary>
+            FlipSwapLocationConfigurations Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.FlipSwapParameters">
+            <summary>
+            FlipSwapParameters Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.FlipSwapQuestions">
+            <summary>
+            FlipSwapQuestions Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.FlipSwapAnswers">
+            <summary>
+            FlipSwapAnswers Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.FlipSwapSearchResults">
+            <summary>
+            FlipSwapSearchResults Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapCustomData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport">
+            <summary>
+            FlipswapDiscrepancyReport DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.#ctor">
+            <summary>
+             FlipswapDiscrepancyReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.#ctor(System.String)">
+            <summary>
+             FlipswapDiscrepancyReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Add(RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.FindByFlipswapRemoteActivityReportRowID(System.Int32)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Remove(RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.FlipswapRemoteActivityReportRowIDColumn">
+            <summary>
+             Returns the defination of the FlipswapRemoteActivityReportRowID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.InvoiceIDByStoreColumn">
+            <summary>
+             Returns the defination of the InvoiceIDByStore Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.TradeInDateColumn">
+            <summary>
+             Returns the defination of the TradeInDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.LocationNameColumn">
+            <summary>
+             Returns the defination of the LocationName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.TradeInTransactionIDColumn">
+            <summary>
+             Returns the defination of the TradeInTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.RemoteInvoiceIDColumn">
+            <summary>
+             Returns the defination of the RemoteInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.RemoteItemIDColumn">
+            <summary>
+             Returns the defination of the RemoteItemID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.ManufacturerModelColumn">
+            <summary>
+             Returns the defination of the ManufacturerModel Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.ExpectedCreditAmountColumn">
+            <summary>
+             Returns the defination of the ExpectedCreditAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.ActualCreditAmountColumn">
+            <summary>
+             Returns the defination of the ActualCreditAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.AdjustmentReasonColumn">
+            <summary>
+             Returns the defination of the AdjustmentReason Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.AdjustmentImageURLColumn">
+            <summary>
+             Returns the defination of the AdjustmentImageURL Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReport.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData">
+            <summary>
+            FlipswapDiscrepancyReportResponseData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.#ctor">
+            <summary>
+            FlipswapDiscrepancyReportResponseData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            FlipswapDiscrepancyReportResponseData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.FlipswapDiscrepancyReport">
+            <summary>
+            FlipswapDiscrepancyReport Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.FlipswapReportLocations">
+            <summary>
+            FlipswapReportLocations Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportResponseData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow">
+            <summary>
+            FlipswapDiscrepancyReportRow DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.FlipswapRemoteActivityReportRowID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.InvoiceIDByStore">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.TradeInDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.LocationName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.TradeInTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.RemoteInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.RemoteItemID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.ManufacturerModel">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.ExpectedCreditAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.ActualCreditAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.AdjustmentReason">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.AdjustmentImageURL">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapDiscrepancyReportRow.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration">
+            <summary>
+            FlipSwapLocationConfiguration DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.LocationConfigurationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Margin">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.ShowSalesConsole">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations">
+            <summary>
+            FlipSwapLocationConfigurations DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.#ctor">
+            <summary>
+             FlipSwapLocationConfigurations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.#ctor(System.String)">
+            <summary>
+             FlipSwapLocationConfigurations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.FindByLocationConfigurationID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfiguration)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.LocationConfigurationIDColumn">
+            <summary>
+             Returns the defination of the LocationConfigurationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.MarginColumn">
+            <summary>
+             Returns the defination of the Margin Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.ShowSalesConsoleColumn">
+            <summary>
+             Returns the defination of the ShowSalesConsole Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapLocationConfigurations.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter">
+            <summary>
+            FlipSwapParameter DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.FlipSwapParameterID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.ParameterName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.ParameterValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters">
+            <summary>
+            FlipSwapParameters DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.#ctor">
+            <summary>
+             FlipSwapParameters Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.#ctor(System.String)">
+            <summary>
+             FlipSwapParameters Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.FindByFlipSwapParameterID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapParameter)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.FlipSwapParameterIDColumn">
+            <summary>
+             Returns the defination of the FlipSwapParameterID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.ParameterNameColumn">
+            <summary>
+             Returns the defination of the ParameterName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.ParameterValueColumn">
+            <summary>
+             Returns the defination of the ParameterValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapParameters.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion">
+            <summary>
+            FlipSwapQuestion DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.AddFlipSwapAnswer(RetailiQ.Integration.Flipswap.Transport.FlipSwapAnswer)">
+            <summary>
+             Add a new child object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.QuestionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.QuestionCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Sequence">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.HelpText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.QuestionRequired">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.QuestionText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.QuestionType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.FlipSwapAnswers">
+            <summary>
+             Returns the objects that are defined by the relation
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions">
+            <summary>
+            FlipSwapQuestions DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.#ctor">
+            <summary>
+             FlipSwapQuestions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.#ctor(System.String)">
+            <summary>
+             FlipSwapQuestions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.FindByQuestionID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestion)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.QuestionIDColumn">
+            <summary>
+             Returns the defination of the QuestionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.QuestionCodeColumn">
+            <summary>
+             Returns the defination of the QuestionCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.SequenceColumn">
+            <summary>
+             Returns the defination of the Sequence Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.HelpTextColumn">
+            <summary>
+             Returns the defination of the HelpText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.QuestionRequiredColumn">
+            <summary>
+             Returns the defination of the QuestionRequired Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.QuestionTextColumn">
+            <summary>
+             Returns the defination of the QuestionText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.QuestionTypeColumn">
+            <summary>
+             Returns the defination of the QuestionType Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapQuestions.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport">
+            <summary>
+            FlipswapRemoteActivityReport DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.#ctor">
+            <summary>
+             FlipswapRemoteActivityReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.#ctor(System.String)">
+            <summary>
+             FlipswapRemoteActivityReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Add(RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.FindByFlipswapRemoteActivityReportRowID(System.Int32)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Remove(RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.FlipswapRemoteActivityReportRowIDColumn">
+            <summary>
+             Returns the defination of the FlipswapRemoteActivityReportRowID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.InvoiceIDByStoreColumn">
+            <summary>
+             Returns the defination of the InvoiceIDByStore Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.TradeInTransactionIDColumn">
+            <summary>
+             Returns the defination of the TradeInTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.LocationNameColumn">
+            <summary>
+             Returns the defination of the LocationName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.AdjustmentReasonColumn">
+            <summary>
+             Returns the defination of the AdjustmentReason Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.CustomerEmailAddressColumn">
+            <summary>
+             Returns the defination of the CustomerEmailAddress Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.InspectedDateColumn">
+            <summary>
+             Returns the defination of the InspectedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.InvoiceIDColumn">
+            <summary>
+             Returns the defination of the InvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.ItemIDColumn">
+            <summary>
+             Returns the defination of the ItemID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.ManufacturerModelColumn">
+            <summary>
+             Returns the defination of the ManufacturerModel Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PreCommissionAmountColumn">
+            <summary>
+             Returns the defination of the PreCommissionAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PreCommissionCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PreCommissionCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PostCommissionAmountColumn">
+            <summary>
+             Returns the defination of the PostCommissionAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PostCommissionCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PostCommissionCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PreCreditDisbursedAmountColumn">
+            <summary>
+             Returns the defination of the PreCreditDisbursedAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PreCreditDisbursedCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PreCreditDisbursedCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PostCreditDisbursedAmountColumn">
+            <summary>
+             Returns the defination of the PostCreditDisbursedAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PostCreditDisbursedCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PostCreditDisbursedCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.ReceiptDateColumn">
+            <summary>
+             Returns the defination of the ReceiptDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.ReferenceNumberColumn">
+            <summary>
+             Returns the defination of the ReferenceNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.ReimbursementDateColumn">
+            <summary>
+             Returns the defination of the ReimbursementDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.SalesRepUsernameColumn">
+            <summary>
+             Returns the defination of the SalesRepUsername Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.SerialNumberColumn">
+            <summary>
+             Returns the defination of the SerialNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.TradeInCompanyNameColumn">
+            <summary>
+             Returns the defination of the TradeInCompanyName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.TradeInDateColumn">
+            <summary>
+             Returns the defination of the TradeInDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.TradeInUsernameColumn">
+            <summary>
+             Returns the defination of the TradeInUsername Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PhoneRebateAmountColumn">
+            <summary>
+             Returns the defination of the PhoneRebateAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.DiscrepancyColumn">
+            <summary>
+             Returns the defination of the Discrepancy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.ProfitColumn">
+            <summary>
+             Returns the defination of the Profit Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PromotionCodeColumn">
+            <summary>
+             Returns the defination of the PromotionCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.PromotionValueColumn">
+            <summary>
+             Returns the defination of the PromotionValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReport.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData">
+            <summary>
+            FlipswapRemoteActivityReportResponseData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.#ctor">
+            <summary>
+            FlipswapRemoteActivityReportResponseData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            FlipswapRemoteActivityReportResponseData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.FlipswapRemoteActivityReport">
+            <summary>
+            FlipswapRemoteActivityReport Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.FlipswapReportLocations">
+            <summary>
+            FlipswapReportLocations Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportResponseData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow">
+            <summary>
+            FlipswapRemoteActivityReportRow DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.FlipswapRemoteActivityReportRowID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.InvoiceIDByStore">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.TradeInTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.LocationName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.AdjustmentReason">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.CustomerEmailAddress">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.InspectedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.InvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.ItemID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.ManufacturerModel">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PreCommissionAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PreCommissionCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PostCommissionAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PostCommissionCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PreCreditDisbursedAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PreCreditDisbursedCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PostCreditDisbursedAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PostCreditDisbursedCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.ReceiptDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.ReferenceNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.ReimbursementDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.SalesRepUsername">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.SerialNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.TradeInCompanyName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.TradeInDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.TradeInUsername">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PhoneRebateAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Discrepancy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Profit">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PromotionCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.PromotionValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapRemoteActivityReportRow.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation">
+            <summary>
+            FlipswapReportLocation DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.FailedAuthentication">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.MaxMessageSizeReached">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Username">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Password">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations">
+            <summary>
+            FlipswapReportLocations DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.#ctor">
+            <summary>
+             FlipswapReportLocations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.#ctor(System.String)">
+            <summary>
+             FlipswapReportLocations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Add(RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Remove(RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocation)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.FailedAuthenticationColumn">
+            <summary>
+             Returns the defination of the FailedAuthentication Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.MaxMessageSizeReachedColumn">
+            <summary>
+             Returns the defination of the MaxMessageSizeReached Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.UsernameColumn">
+            <summary>
+             Returns the defination of the Username Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.PasswordColumn">
+            <summary>
+             Returns the defination of the Password Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipswapReportLocations.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult">
+            <summary>
+            FlipSwapSearchResult DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.ModelId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.AsMuchAsPricing">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.ImageUrl">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.ModelNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.QuickQuotePricing">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.FriendlyTitle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapSearchResult.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction">
+            <summary>
+            FlipSwapTransaction DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.AddFlipSwapTransactionAttribute(RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute)">
+            <summary>
+             Add a new child object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.FlipSwapTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Priority">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TradeInInvoiceNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TradeInItemNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.ModelID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.CustomerCredit">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.ExpectedRebateAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Margin">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.CurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.CurrencyDecimalPlaces">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.CurrencySybmol">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteCreatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteAcceptedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteCanceledDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteDeclinedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TransactionCommittedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteCreatedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteCanceledAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TransactionCommittedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteCreatedBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.QuoteCanceledBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.TransactionCommitteBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.PromotionCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.PromotionValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.PromotionValue2">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.RefNoAnswerText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.FlipSwapTransactionAttributes">
+            <summary>
+             Returns the objects that are defined by the relation
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute">
+            <summary>
+            FlipSwapTransactionAttribute DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.FlipSwapTransactionAttributeID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.FlipSwapTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.ClassName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.PropertyName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.PropertyValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes">
+            <summary>
+            FlipSwapTransactionAttributes DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.#ctor">
+            <summary>
+             FlipSwapTransactionAttributes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.#ctor(System.String)">
+            <summary>
+             FlipSwapTransactionAttributes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.FindByFlipSwapTransactionAttributeID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttribute)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.FlipSwapTransactionAttributeIDColumn">
+            <summary>
+             Returns the defination of the FlipSwapTransactionAttributeID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.FlipSwapTransactionIDColumn">
+            <summary>
+             Returns the defination of the FlipSwapTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.ClassNameColumn">
+            <summary>
+             Returns the defination of the ClassName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.PropertyNameColumn">
+            <summary>
+             Returns the defination of the PropertyName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.PropertyValueColumn">
+            <summary>
+             Returns the defination of the PropertyValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionAttributes.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions">
+            <summary>
+            FlipSwapTransactions DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.#ctor">
+            <summary>
+             FlipSwapTransactions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.#ctor(System.String)">
+            <summary>
+             FlipSwapTransactions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Add(RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.FindByFlipSwapTransactionID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Remove(RetailiQ.Integration.Flipswap.Transport.FlipSwapTransaction)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.FlipSwapTransactionIDColumn">
+            <summary>
+             Returns the defination of the FlipSwapTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.PriorityColumn">
+            <summary>
+             Returns the defination of the Priority Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.TradeInInvoiceNumberColumn">
+            <summary>
+             Returns the defination of the TradeInInvoiceNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.TradeInItemNumberColumn">
+            <summary>
+             Returns the defination of the TradeInItemNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.ModelIDColumn">
+            <summary>
+             Returns the defination of the ModelID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.CustomerCreditColumn">
+            <summary>
+             Returns the defination of the CustomerCredit Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.ExpectedRebateAmountColumn">
+            <summary>
+             Returns the defination of the ExpectedRebateAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.MarginColumn">
+            <summary>
+             Returns the defination of the Margin Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.CurrencyCodeColumn">
+            <summary>
+             Returns the defination of the CurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.CurrencyDecimalPlacesColumn">
+            <summary>
+             Returns the defination of the CurrencyDecimalPlaces Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.CurrencySybmolColumn">
+            <summary>
+             Returns the defination of the CurrencySybmol Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteCreatedDateColumn">
+            <summary>
+             Returns the defination of the QuoteCreatedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteAcceptedDateColumn">
+            <summary>
+             Returns the defination of the QuoteAcceptedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteCanceledDateColumn">
+            <summary>
+             Returns the defination of the QuoteCanceledDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteDeclinedDateColumn">
+            <summary>
+             Returns the defination of the QuoteDeclinedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.TransactionCommittedDateColumn">
+            <summary>
+             Returns the defination of the TransactionCommittedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteCreatedAtColumn">
+            <summary>
+             Returns the defination of the QuoteCreatedAt Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteCanceledAtColumn">
+            <summary>
+             Returns the defination of the QuoteCanceledAt Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.TransactionCommittedAtColumn">
+            <summary>
+             Returns the defination of the TransactionCommittedAt Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteCreatedByColumn">
+            <summary>
+             Returns the defination of the QuoteCreatedBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.QuoteCanceledByColumn">
+            <summary>
+             Returns the defination of the QuoteCanceledBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.TransactionCommitteByColumn">
+            <summary>
+             Returns the defination of the TransactionCommitteBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.PromotionCodeColumn">
+            <summary>
+             Returns the defination of the PromotionCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.PromotionValueColumn">
+            <summary>
+             Returns the defination of the PromotionValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.PromotionValue2Column">
+            <summary>
+             Returns the defination of the PromotionValue2 Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.RefNoAnswerTextColumn">
+            <summary>
+             Returns the defination of the RefNoAnswerText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactions.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData">
+            <summary>
+            FlipSwapTransactionsData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.#ctor">
+            <summary>
+            FlipSwapTransactionsData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            FlipSwapTransactionsData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.FlipSwapTransactions">
+            <summary>
+            FlipSwapTransactions Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.FlipSwapTransactionAttributes">
+            <summary>
+            FlipSwapTransactionAttributes Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.Flipswap.Transport.FlipSwapTransactionsData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+    </members>
+</doc>

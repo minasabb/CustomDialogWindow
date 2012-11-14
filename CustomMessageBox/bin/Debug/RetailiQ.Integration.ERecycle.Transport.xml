@@ -1,0 +1,3570 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetailiQ.Integration.ERecycle.Transport</name>
+    </assembly>
+    <members>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ContractType">
+            <summary>
+            ContractType DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractType.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractType.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractType.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractType.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.TermType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.TermDescription">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractType.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ContractTypes">
+            <summary>
+            ContractTypes DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.#ctor">
+            <summary>
+             ContractTypes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.#ctor(System.String)">
+            <summary>
+             ContractTypes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Add(RetailiQ.Integration.ERecycle.Transport.ContractType)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.FindByTermType(System.String)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Remove(RetailiQ.Integration.ERecycle.Transport.ContractType)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractTypes.TermTypeColumn">
+            <summary>
+             Returns the defination of the TermType Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractTypes.TermDescriptionColumn">
+            <summary>
+             Returns the defination of the TermDescription Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ContractTypes.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer">
+            <summary>
+            ERecycleAnswer DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.AnswerID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.ERecycleAnswerID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.QuestionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.AnswerText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers">
+            <summary>
+            ERecycleAnswers DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.#ctor">
+            <summary>
+             ERecycleAnswers Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.#ctor(System.String)">
+            <summary>
+             ERecycleAnswers Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.FindByAnswerID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.AnswerIDColumn">
+            <summary>
+             Returns the defination of the AnswerID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.ERecycleAnswerIDColumn">
+            <summary>
+             Returns the defination of the ERecycleAnswerID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.QuestionIDColumn">
+            <summary>
+             Returns the defination of the QuestionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.AnswerTextColumn">
+            <summary>
+             Returns the defination of the AnswerText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleAnswers.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData">
+            <summary>
+            ERecycleCustomData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.#ctor">
+            <summary>
+            ERecycleCustomData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            ERecycleCustomData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ERecycleLocationConfigurations">
+            <summary>
+            ERecycleLocationConfigurations Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ERecycleParameters">
+            <summary>
+            ERecycleParameters Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ERecycleQuestions">
+            <summary>
+            ERecycleQuestions Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ERecycleAnswers">
+            <summary>
+            ERecycleAnswers Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.ERecycleSearchResults">
+            <summary>
+            ERecycleSearchResults Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleCustomData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport">
+            <summary>
+            ERecycleDiscrepancyReport DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.#ctor">
+            <summary>
+             ERecycleDiscrepancyReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.#ctor(System.String)">
+            <summary>
+             ERecycleDiscrepancyReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.FindByERecycleRemoteActivityReportRowID(System.Int32)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ERecycleRemoteActivityReportRowIDColumn">
+            <summary>
+             Returns the defination of the ERecycleRemoteActivityReportRowID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.InvoiceIDByStoreColumn">
+            <summary>
+             Returns the defination of the InvoiceIDByStore Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.TradeInDateColumn">
+            <summary>
+             Returns the defination of the TradeInDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.LocationNameColumn">
+            <summary>
+             Returns the defination of the LocationName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.TradeInTransactionIDColumn">
+            <summary>
+             Returns the defination of the TradeInTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ERecycleTransactionIDColumn">
+            <summary>
+             Returns the defination of the ERecycleTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ProviderNameColumn">
+            <summary>
+             Returns the defination of the ProviderName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.RemoteInvoiceIDColumn">
+            <summary>
+             Returns the defination of the RemoteInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.RemoteItemIDColumn">
+            <summary>
+             Returns the defination of the RemoteItemID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ManufacturerModelColumn">
+            <summary>
+             Returns the defination of the ManufacturerModel Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ExpectedCreditAmountColumn">
+            <summary>
+             Returns the defination of the ExpectedCreditAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.ActualCreditAmountColumn">
+            <summary>
+             Returns the defination of the ActualCreditAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.AdjustmentReasonColumn">
+            <summary>
+             Returns the defination of the AdjustmentReason Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.AdjustmentImageURLColumn">
+            <summary>
+             Returns the defination of the AdjustmentImageURL Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReport.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData">
+            <summary>
+            ERecycleDiscrepancyReportResponseData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.#ctor">
+            <summary>
+            ERecycleDiscrepancyReportResponseData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            ERecycleDiscrepancyReportResponseData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.ERecycleDiscrepancyReport">
+            <summary>
+            ERecycleDiscrepancyReport Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.ERecycleReportLocations">
+            <summary>
+            ERecycleReportLocations Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportResponseData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow">
+            <summary>
+            ERecycleDiscrepancyReportRow DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ERecycleRemoteActivityReportRowID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.InvoiceIDByStore">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.TradeInDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.LocationName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.TradeInTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ERecycleTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ProviderName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.RemoteInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.RemoteItemID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ManufacturerModel">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ExpectedCreditAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.ActualCreditAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.AdjustmentReason">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.AdjustmentImageURL">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleDiscrepancyReportRow.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration">
+            <summary>
+            ERecycleLocationConfiguration DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.LocationConfigurationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Margin">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.ShowSalesConsole">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations">
+            <summary>
+            ERecycleLocationConfigurations DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.#ctor">
+            <summary>
+             ERecycleLocationConfigurations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.#ctor(System.String)">
+            <summary>
+             ERecycleLocationConfigurations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.FindByLocationConfigurationID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfiguration)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.LocationConfigurationIDColumn">
+            <summary>
+             Returns the defination of the LocationConfigurationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.MarginColumn">
+            <summary>
+             Returns the defination of the Margin Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.ShowSalesConsoleColumn">
+            <summary>
+             Returns the defination of the ShowSalesConsole Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleLocationConfigurations.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter">
+            <summary>
+            ERecycleParameter DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.ERecycleParameterID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.ParameterName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.ParameterValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameter.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters">
+            <summary>
+            ERecycleParameters DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.#ctor">
+            <summary>
+             ERecycleParameters Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.#ctor(System.String)">
+            <summary>
+             ERecycleParameters Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleParameter)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.FindByERecycleParameterID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleParameter)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.ERecycleParameterIDColumn">
+            <summary>
+             Returns the defination of the ERecycleParameterID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.ParameterNameColumn">
+            <summary>
+             Returns the defination of the ParameterName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.ParameterValueColumn">
+            <summary>
+             Returns the defination of the ParameterValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleParameters.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion">
+            <summary>
+            ERecycleQuestion DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.AddERecycleAnswer(RetailiQ.Integration.ERecycle.Transport.ERecycleAnswer)">
+            <summary>
+             Add a new child object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.QuestionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.QuestionCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Sequence">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.HelpText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.QuestionRequired">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.QuestionText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.QuestionType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.ERecycleAnswers">
+            <summary>
+             Returns the objects that are defined by the relation
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions">
+            <summary>
+            ERecycleQuestions DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.#ctor">
+            <summary>
+             ERecycleQuestions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.#ctor(System.String)">
+            <summary>
+             ERecycleQuestions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.FindByQuestionID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleQuestion)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.QuestionIDColumn">
+            <summary>
+             Returns the defination of the QuestionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.QuestionCodeColumn">
+            <summary>
+             Returns the defination of the QuestionCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.SequenceColumn">
+            <summary>
+             Returns the defination of the Sequence Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.HelpTextColumn">
+            <summary>
+             Returns the defination of the HelpText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.QuestionRequiredColumn">
+            <summary>
+             Returns the defination of the QuestionRequired Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.QuestionTextColumn">
+            <summary>
+             Returns the defination of the QuestionText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.QuestionTypeColumn">
+            <summary>
+             Returns the defination of the QuestionType Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleQuestions.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport">
+            <summary>
+            ERecycleRemoteActivityReport DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.#ctor">
+            <summary>
+             ERecycleRemoteActivityReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.#ctor(System.String)">
+            <summary>
+             ERecycleRemoteActivityReport Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.FindByERecycleRemoteActivityReportRowID(System.Int32)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ERecycleRemoteActivityReportRowIDColumn">
+            <summary>
+             Returns the defination of the ERecycleRemoteActivityReportRowID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.InvoiceIDByStoreColumn">
+            <summary>
+             Returns the defination of the InvoiceIDByStore Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ERecycleTransactionIDColumn">
+            <summary>
+             Returns the defination of the ERecycleTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TradeInTransactionIDColumn">
+            <summary>
+             Returns the defination of the TradeInTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ProviderNameColumn">
+            <summary>
+             Returns the defination of the ProviderName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.LocationNameColumn">
+            <summary>
+             Returns the defination of the LocationName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.AdjustmentReasonColumn">
+            <summary>
+             Returns the defination of the AdjustmentReason Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.RegionNameColumn">
+            <summary>
+             Returns the defination of the RegionName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.CustomerEmailAddressColumn">
+            <summary>
+             Returns the defination of the CustomerEmailAddress Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.InspectedDateColumn">
+            <summary>
+             Returns the defination of the InspectedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.InvoiceIDColumn">
+            <summary>
+             Returns the defination of the InvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ItemIDColumn">
+            <summary>
+             Returns the defination of the ItemID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ManufacturerModelColumn">
+            <summary>
+             Returns the defination of the ManufacturerModel Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PreCommissionAmountColumn">
+            <summary>
+             Returns the defination of the PreCommissionAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PreCommissionCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PreCommissionCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PostCommissionAmountColumn">
+            <summary>
+             Returns the defination of the PostCommissionAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PostCommissionCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PostCommissionCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PreCreditDisbursedAmountColumn">
+            <summary>
+             Returns the defination of the PreCreditDisbursedAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PreCreditDisbursedCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PreCreditDisbursedCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PostCreditDisbursedAmountColumn">
+            <summary>
+             Returns the defination of the PostCreditDisbursedAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PostCreditDisbursedCurrencyCodeColumn">
+            <summary>
+             Returns the defination of the PostCreditDisbursedCurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ReceiptDateColumn">
+            <summary>
+             Returns the defination of the ReceiptDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ReferenceNumberColumn">
+            <summary>
+             Returns the defination of the ReferenceNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ReimbursementDateColumn">
+            <summary>
+             Returns the defination of the ReimbursementDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.SalesRepUsernameColumn">
+            <summary>
+             Returns the defination of the SalesRepUsername Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.SerialNumberColumn">
+            <summary>
+             Returns the defination of the SerialNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TradeInCompanyNameColumn">
+            <summary>
+             Returns the defination of the TradeInCompanyName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TradeInDateColumn">
+            <summary>
+             Returns the defination of the TradeInDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TradeInUsernameColumn">
+            <summary>
+             Returns the defination of the TradeInUsername Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PhoneRebateAmountColumn">
+            <summary>
+             Returns the defination of the PhoneRebateAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.DiscrepancyColumn">
+            <summary>
+             Returns the defination of the Discrepancy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.ProfitColumn">
+            <summary>
+             Returns the defination of the Profit Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PromotionCodeColumn">
+            <summary>
+             Returns the defination of the PromotionCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.PromotionValueColumn">
+            <summary>
+             Returns the defination of the PromotionValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TransactionCommittedDateColumn">
+            <summary>
+             Returns the defination of the TransactionCommittedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TradeInCanceledDateColumn">
+            <summary>
+             Returns the defination of the TradeInCanceledDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.TradeInDeclinedDateColumn">
+            <summary>
+             Returns the defination of the TradeInDeclinedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReport.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData">
+            <summary>
+            ERecycleRemoteActivityReportResponseData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.#ctor">
+            <summary>
+            ERecycleRemoteActivityReportResponseData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            ERecycleRemoteActivityReportResponseData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.ERecycleRemoteActivityReport">
+            <summary>
+            ERecycleRemoteActivityReport Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.ERecycleReportLocations">
+            <summary>
+            ERecycleReportLocations Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportResponseData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow">
+            <summary>
+            ERecycleRemoteActivityReportRow DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ERecycleRemoteActivityReportRowID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.InvoiceIDByStore">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ERecycleTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TradeInTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ProviderName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.LocationName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.AdjustmentReason">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.RegionName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.CustomerEmailAddress">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.InspectedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.InvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ItemID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ManufacturerModel">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PreCommissionAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PreCommissionCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PostCommissionAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PostCommissionCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PreCreditDisbursedAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PreCreditDisbursedCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PostCreditDisbursedAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PostCreditDisbursedCurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ReceiptDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ReferenceNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.ReimbursementDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.SalesRepUsername">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.SerialNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TradeInCompanyName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TradeInDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TradeInUsername">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PhoneRebateAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Discrepancy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Profit">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PromotionCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.PromotionValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TransactionCommittedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TradeInCanceledDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.TradeInDeclinedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleRemoteActivityReportRow.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation">
+            <summary>
+            ERecycleReportLocation DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.LocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.FailedAuthentication">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Username">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Password">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations">
+            <summary>
+            ERecycleReportLocations DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.#ctor">
+            <summary>
+             ERecycleReportLocations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.#ctor(System.String)">
+            <summary>
+             ERecycleReportLocations Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocation)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.LocationIDColumn">
+            <summary>
+             Returns the defination of the LocationID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.FailedAuthenticationColumn">
+            <summary>
+             Returns the defination of the FailedAuthentication Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.UsernameColumn">
+            <summary>
+             Returns the defination of the Username Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.PasswordColumn">
+            <summary>
+             Returns the defination of the Password Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleReportLocations.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult">
+            <summary>
+            ERecycleSearchResult DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.ModelId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.AsMuchAsPricing">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.ImageUrl">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.ModelNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.QuickQuotePricing">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.FriendlyTitle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults">
+            <summary>
+            ERecycleSearchResults DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.#ctor">
+            <summary>
+             ERecycleSearchResults Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.#ctor(System.String)">
+            <summary>
+             ERecycleSearchResults Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.FindByModelId(System.Int64)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResult)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.ModelIdColumn">
+            <summary>
+             Returns the defination of the ModelId Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.AsMuchAsPricingColumn">
+            <summary>
+             Returns the defination of the AsMuchAsPricing Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.ImageUrlColumn">
+            <summary>
+             Returns the defination of the ImageUrl Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.ModelNumberColumn">
+            <summary>
+             Returns the defination of the ModelNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.QuickQuotePricingColumn">
+            <summary>
+             Returns the defination of the QuickQuotePricing Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.FriendlyTitleColumn">
+            <summary>
+             Returns the defination of the FriendlyTitle Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleSearchResults.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction">
+            <summary>
+            ERecycleTransaction DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.AddERecycleTransactionAttribute(RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute)">
+            <summary>
+             Add a new child object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.ERecycleTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.ProviderID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.SaleInvoiceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Priority">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TradeInInvoiceNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TradeInItemNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.ModelID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.CustomerCredit">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.ExpectedRebateAmount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Margin">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.CurrencyCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.CurrencyDecimalPlaces">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.CurrencySybmol">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteCreatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteAcceptedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteCanceledDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteDeclinedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TransactionCommittedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteCreatedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteCanceledAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TransactionCommittedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteCreatedBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.QuoteCanceledBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.TransactionCommitteBy">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.PromotionCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.PromotionValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.PromotionValue2">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.RefNoAnswerText">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.ERecycleTransactionAttributes">
+            <summary>
+             Returns the objects that are defined by the relation
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute">
+            <summary>
+            ERecycleTransactionAttribute DataRow
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.ERecycleTransactionAttributeID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.ERecycleTransactionID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.ClassName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.PropertyName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.PropertyValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes">
+            <summary>
+            ERecycleTransactionAttributes DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.#ctor">
+            <summary>
+             ERecycleTransactionAttributes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.#ctor(System.String)">
+            <summary>
+             ERecycleTransactionAttributes Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.FindByERecycleTransactionAttributeID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttribute)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.ERecycleTransactionAttributeIDColumn">
+            <summary>
+             Returns the defination of the ERecycleTransactionAttributeID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.ERecycleTransactionIDColumn">
+            <summary>
+             Returns the defination of the ERecycleTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.ClassNameColumn">
+            <summary>
+             Returns the defination of the ClassName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.PropertyNameColumn">
+            <summary>
+             Returns the defination of the PropertyName Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.PropertyValueColumn">
+            <summary>
+             Returns the defination of the PropertyValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionAttributes.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions">
+            <summary>
+            ERecycleTransactions DataTable
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.#ctor">
+            <summary>
+             ERecycleTransactions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.#ctor(System.String)">
+            <summary>
+             ERecycleTransactions Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Add(RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.FindByERecycleTransactionID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Remove(RetailiQ.Integration.ERecycle.Transport.ERecycleTransaction)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.ERecycleTransactionIDColumn">
+            <summary>
+             Returns the defination of the ERecycleTransactionID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.ProviderIDColumn">
+            <summary>
+             Returns the defination of the ProviderID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.SaleInvoiceIDColumn">
+            <summary>
+             Returns the defination of the SaleInvoiceID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.PriorityColumn">
+            <summary>
+             Returns the defination of the Priority Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.TradeInInvoiceNumberColumn">
+            <summary>
+             Returns the defination of the TradeInInvoiceNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.TradeInItemNumberColumn">
+            <summary>
+             Returns the defination of the TradeInItemNumber Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.ModelIDColumn">
+            <summary>
+             Returns the defination of the ModelID Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.CustomerCreditColumn">
+            <summary>
+             Returns the defination of the CustomerCredit Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.ExpectedRebateAmountColumn">
+            <summary>
+             Returns the defination of the ExpectedRebateAmount Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.MarginColumn">
+            <summary>
+             Returns the defination of the Margin Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.CurrencyCodeColumn">
+            <summary>
+             Returns the defination of the CurrencyCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.CurrencyDecimalPlacesColumn">
+            <summary>
+             Returns the defination of the CurrencyDecimalPlaces Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.CurrencySybmolColumn">
+            <summary>
+             Returns the defination of the CurrencySybmol Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteCreatedDateColumn">
+            <summary>
+             Returns the defination of the QuoteCreatedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteAcceptedDateColumn">
+            <summary>
+             Returns the defination of the QuoteAcceptedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteCanceledDateColumn">
+            <summary>
+             Returns the defination of the QuoteCanceledDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteDeclinedDateColumn">
+            <summary>
+             Returns the defination of the QuoteDeclinedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.TransactionCommittedDateColumn">
+            <summary>
+             Returns the defination of the TransactionCommittedDate Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteCreatedAtColumn">
+            <summary>
+             Returns the defination of the QuoteCreatedAt Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteCanceledAtColumn">
+            <summary>
+             Returns the defination of the QuoteCanceledAt Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.TransactionCommittedAtColumn">
+            <summary>
+             Returns the defination of the TransactionCommittedAt Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteCreatedByColumn">
+            <summary>
+             Returns the defination of the QuoteCreatedBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.QuoteCanceledByColumn">
+            <summary>
+             Returns the defination of the QuoteCanceledBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.TransactionCommitteByColumn">
+            <summary>
+             Returns the defination of the TransactionCommitteBy Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.PromotionCodeColumn">
+            <summary>
+             Returns the defination of the PromotionCode Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.PromotionValueColumn">
+            <summary>
+             Returns the defination of the PromotionValue Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.PromotionValue2Column">
+            <summary>
+             Returns the defination of the PromotionValue2 Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.RefNoAnswerTextColumn">
+            <summary>
+             Returns the defination of the RefNoAnswerText Column
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactions.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData">
+            <summary>
+            ERecycleTransactionsData DataSet
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.#ctor">
+            <summary>
+            ERecycleTransactionsData Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            ERecycleTransactionsData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.ERecycleTransactions">
+            <summary>
+            ERecycleTransactions Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.ERecycleTransactionAttributes">
+            <summary>
+            ERecycleTransactionAttributes Data
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:RetailiQ.Integration.ERecycle.Transport.ERecycleTransactionsData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Enterprise.Secure.ESignature.Transport</name>
+    </assembly>
+    <members>
+        <member name="F:IQ.Enterprise.Secure.ESignature.Transport.DisplayLicenseAgreementControlText.CancelButtonCaption">
+            <summary>
+            Caption for Cancel Button When the Form First Loads on the device.
+            </summary>
+        </member>
+        <member name="F:IQ.Enterprise.Secure.ESignature.Transport.DisplayLicenseAgreementControlText.OKButtonCaption">
+            <summary>
+            Caption for Cancel Button when user checks checkbox.
+            </summary>
+        </member>
+        <member name="P:IQ.Enterprise.Secure.ESignature.Transport.PointOfSaleDeviceContext.CardNumber">
+            <summary>
+            Not for use with credit card numbers.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Core.Integration.IApplicationServices</name>
+    </assembly>
+    <members>
+        <member name="T:IQ.Core.Integration.IApplicationServices.IIntegrationDataDeliveriesService">
+            <summary>
+            Service that manipulates integration data deliveries.
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationDataDeliveriesService.GetDeliveriesByReferenceValue(System.String)">
+            <summary>
+            Finds integration data deliveries that contains specified business key (reference value).
+            </summary>
+            <param name="referenceValue">business key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationDataDeliveriesService.GetDeliveriesByCreatedDateRange(System.DateTime,System.DateTime)">
+            <summary>
+            Finds integration data deliveries that were created within specified time range.
+            </summary>
+            <param name="startTime">start UTC time</param>
+            <param name="endTime">end UTC time</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.GetAllProviders">
+            <summary>
+            Gets all providers.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.GetProviderByName(System.String)">
+            <summary>
+            Gets the provider that matches the passed in name
+            </summary>
+            <param name="providerName">The Provider Name to search for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.UpdateIntegrationConfiguration(IQ.Core.Integration.Transport.IntegrationConfigurationData)">
+            <summary>
+            Updates the integration configuration related to a client and that client's locations.
+            </summary>
+            <param name="configDS">The config DS.</param>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.UpdateIntegrationConfigurationFromLocationSummary(IQ.Core.Integration.Transport.IntegrationConfigurationData)">
+            <summary>
+            Updates the integration configuration related to a client and that client's locations based on the Location Summary table
+            </summary>
+            <param name="configDS">The config DS.</param>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.GetProviderConfiguration(System.Guid)">
+            <summary>
+            Gets the provider configuration.
+            </summary>
+            <param name="providerID">The provider ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.GetProviderConfigurationWithLocationSummary(System.Guid)">
+            <summary>
+            Gets the provider configuration and fills a summary table.
+            </summary>
+            <param name="providerID">The provider ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.GetProductMappings(System.Int32,System.Boolean)">
+            <summary>
+            Gets the product mappings.
+            </summary>
+            <param name="clientID">The client ID.</param>
+            <param name="locationID">The location ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.UpdateProductMappings(System.Data.DataSet)">
+            <summary>
+            Updates the product mapping.
+            </summary>
+            <param name="productMappingsDS">The product mappings DS.</param>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.GetStartupProviderConfigurations(System.Int32)">
+            <summary>
+            Gets the startup provider configurations.
+            </summary>
+            <param name="locationID">The location ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Integration.IApplicationServices.IIntegrationService.LogIntegrationTransaction(IQ.Core.Integration.Transport.IntegrationLogData@,System.Guid,System.Int32,System.String,System.String,System.Guid,System.Object[])">
+            <summary>
+            Logs an integration transaction
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Integration.IApplicationServices.Security.IVendorRequestCredentials.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:IQ.Core.Integration.IApplicationServices.Security.IVendorRequestCredentials.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>The password.</value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Core.Configuration.Model</name>
+    </assembly>
+    <members>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.#ctor(System.Version)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IQ.Core.Configuration.Model.ConfigurationFactory"/> class.  This version is used
+            on a support key setup with multiple installations
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.SetActivationService(IQ.Framework.Configuration.ApplicationServer)">
+            <summary>
+            Allows the caller to override which activation service will be used when
+            constructing and populating IConfigSettings objects. If this function is
+            not called, the default setting from App.config is used instead.
+            </summary>
+            <param name="activationService"></param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetService">
+            <summary>
+            Gets the service.  Will try to use the standard Application configuration or the application configuration passed
+            in with SetActivationService
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetWorkstationSettings">
+            <summary>
+            Gets the workstation settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetCompanySettings">
+            <summary>
+            Gets the company settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetUserSettings">
+            <summary>
+            Gets the user settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetUserPersonalizationSettings">
+            <summary>
+            Gets the user personalization settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.ConvertPersonalizationSetting(IQ.Core.Configuration.PersonalizationSettings,System.String)">
+            <summary>
+            This will check to see if the settings need to be converted
+            </summary>
+            <param name="settings"></param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.Save(IQ.Core.Configuration.UserPersonalizationSettings)">
+            <summary>
+            Saves the user personalization settings.
+            </summary>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetCurrentEnvironmentName">
+            <summary>
+            Gets the name of the current environment.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.GetApplicationVersion">
+            <summary>
+            Gets the application version.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.Save(IQ.Core.Configuration.CompanySettings)">
+            <summary>
+            Saves the specified setting.
+            </summary>
+            <param name="setting">The setting.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.Save(IQ.Core.Configuration.UserSettings)">
+            <summary>
+            Saves the specified setting.
+            </summary>
+            <param name="setting">The setting.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.Save(IQ.Core.Configuration.WorkstationSettings)">
+            <summary>
+            Saves the specified setting.
+            </summary>
+            <param name="setting">The setting.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Model.ConfigurationFactory.ConvertWorkstationSettings">
+            <summary>
+            Converts from workstation settings to activation model.
+            </summary>
+            <param name="activationModel">The activation model.</param>
+        </member>
+        <member name="P:IQ.Core.Configuration.Model.ConfigurationFactory.ActivationKey">
+            <summary>
+            Gets the activation key.  Its used to ensure that the activation requirement has been completed before any other 
+            configuration settings are used
+            </summary>
+            <value>The activation key.</value>
+        </member>
+        <member name="P:IQ.Core.Configuration.Model.ConfigurationFactory.LocalConfigurationBasePath">
+            <summary>
+            Gets or sets the local configuration base path.
+            </summary>
+            <value>The local configuration base path.</value>
+        </member>
+        <member name="P:IQ.Core.Configuration.Model.ConfigurationFactory.CommonConfigurationBasePath">
+            <summary>
+            Gets or sets the common configuration base path.
+            </summary>
+            <value>The common configuration base path.</value>
+        </member>
+    </members>
+</doc>

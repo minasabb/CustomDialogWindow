@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Enterprise.PaymentProcessing.Common</name>
+    </assembly>
+    <members>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.CreditCardDetails.#ctor(System.String)">
+            <summary>
+            We only need the account number of the card to determine a bunch of details about it
+            </summary>
+            <param name="accountNumber"></param>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationControl.Initialize">
+            <summary>
+            Initializes the user control.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationControl.Save">
+            <summary>
+            Saves the model when asked too
+            </summary>
+        </member>
+        <member name="P:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationControl.Logo">
+            <summary>
+            Gets the logo.
+            </summary>
+            <value>The logo.</value>
+        </member>
+        <member name="P:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationControl.Title">
+            <summary>
+            Gets the title.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationControl.ErrorMessage">
+            <summary>
+            Gets the error message
+            </summary>
+        </member>
+        <member name="P:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationControl.IsFieldModified">
+            <summary>
+            Has the user modified any of the fields.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationController.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.IPaymentProcessingConfigurationController.ControlClose">
+            <summary>
+            Closes the parent form.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.IsDecimal(System.String)">
+            <summary>
+            Validate that the input is a valid decimal (used to check payment amounts)
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.ValidateAuthorizationRequest(IQ.Enterprise.PaymentProcessing.Transport.PaymentInformation)">
+            <summary>
+            Generic validation checks for each of the providers for doing authorizations. Any provider specific checks should be
+            done in the concrete class implementation.
+            </summary>
+            <param name="payment"></param>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.TransactionLogRequestWrite(IQ.Enterprise.PaymentProcessing.Transport.PaymentInformation,System.String,System.DateTime,System.String)">
+            <summary>
+            Logs any transaction request for all providers to the Payment Processing diagnostic log.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.TransactionLogResponseWrite(IQ.Enterprise.PaymentProcessing.Transport.PaymentInformation,IQ.Enterprise.PaymentProcessing.Transport.AuthorizationInformation,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Logs any transaction response for all providers to the Payment Processing diagnostic log.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.TransactionLogErrorWrite(IQ.Enterprise.PaymentProcessing.Transport.PaymentInformation,System.String,System.String,System.DateTime,System.String,System.String)">
+            <summary>
+            Logs any transaction error for all providers to the Payment Processing diagnostic log.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.TransactionLogBatchRequestWrite(System.Guid,System.Int32,System.String,System.String,System.DateTime,System.String,System.String)">
+            <summary>
+            Logs any batch request for all providers to the Payment Processing diagnostic log.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.TransactionLogBatchResponseWrite(System.Guid,System.Int32,System.String,System.String,System.DateTime,System.String,System.Double,System.String)">
+            <summary>
+            Logs any batch response for all providers to the Payment Processing diagnostic log.
+            </summary>
+        </member>
+        <member name="M:IQ.Enterprise.PaymentProcessing.Common.PaymentProcessingAbstract.TransactionLogBatchErrorWrite(System.Guid,System.Int32,System.String,System.String,System.DateTime,System.String,System.String,System.Double,System.String)">
+            <summary>
+            Logs any batch error for all providers to the Payment Processing diagnostic log.
+            </summary>
+        </member>
+    </members>
+</doc>

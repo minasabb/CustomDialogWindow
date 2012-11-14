@@ -1,0 +1,1252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IQ.Core.Configuration.Transport</name>
+    </assembly>
+    <members>
+        <member name="T:IQ.Core.Configuration.Transport.AppliedSkin">
+            <summary>
+            AppliedSkin DataRow
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkin.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkin.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkin.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkin.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.AppliedSkinID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.SkinLocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.ReferenceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.ReferenceTypeID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.SkinID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.CreatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.CreatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.UpdatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.UpdatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.SystemTimeStamp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkin.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.AppliedSkins">
+            <summary>
+            AppliedSkins DataTable
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.#ctor">
+            <summary>
+             AppliedSkins Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.#ctor(System.String)">
+            <summary>
+             AppliedSkins Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Add(IQ.Core.Configuration.Transport.AppliedSkin)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.FindByAppliedSkinID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.AppliedSkins.Remove(IQ.Core.Configuration.Transport.AppliedSkin)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.AppliedSkinIDColumn">
+            <summary>
+             Returns the defination of the AppliedSkinID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.SkinLocationIDColumn">
+            <summary>
+             Returns the defination of the SkinLocationID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.ReferenceIDColumn">
+            <summary>
+             Returns the defination of the ReferenceID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.ReferenceTypeIDColumn">
+            <summary>
+             Returns the defination of the ReferenceTypeID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.SkinIDColumn">
+            <summary>
+             Returns the defination of the SkinID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.CreatedByUserColumn">
+            <summary>
+             Returns the defination of the CreatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.CreatedDateColumn">
+            <summary>
+             Returns the defination of the CreatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.UpdatedByUserColumn">
+            <summary>
+             Returns the defination of the UpdatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.UpdatedDateColumn">
+            <summary>
+             Returns the defination of the UpdatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.SystemTimeStampColumn">
+            <summary>
+             Returns the defination of the SystemTimeStamp Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.AppliedSkins.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.Configuration">
+            <summary>
+            Configuration DataRow
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configuration.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configuration.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configuration.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configuration.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.ConfigurationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Key">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Value">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.CreatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.CreatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.UpdatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.UpdatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.SystemTimeStamp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configuration.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.ConfigurationData">
+            <summary>
+            ConfigurationData DataSet
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.#ctor">
+            <summary>
+            ConfigurationData Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            ConfigurationData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.ConfigurationData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.ConfigurationData.Configurations">
+            <summary>
+            Configurations Data
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.ConfigurationData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.ConfigurationData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.ConfigurationData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.Configurations">
+            <summary>
+            Configurations DataTable
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.#ctor">
+            <summary>
+             Configurations Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.#ctor(System.String)">
+            <summary>
+             Configurations Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Add(IQ.Core.Configuration.Transport.Configuration)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.FindByConfigurationID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Configurations.Remove(IQ.Core.Configuration.Transport.Configuration)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.ConfigurationIDColumn">
+            <summary>
+             Returns the defination of the ConfigurationID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.KeyColumn">
+            <summary>
+             Returns the defination of the Key Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.ValueColumn">
+            <summary>
+             Returns the defination of the Value Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.CreatedByUserColumn">
+            <summary>
+             Returns the defination of the CreatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.CreatedDateColumn">
+            <summary>
+             Returns the defination of the CreatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.UpdatedByUserColumn">
+            <summary>
+             Returns the defination of the UpdatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.UpdatedDateColumn">
+            <summary>
+             Returns the defination of the UpdatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.SystemTimeStampColumn">
+            <summary>
+             Returns the defination of the SystemTimeStamp Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Configurations.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.Skin">
+            <summary>
+            Skin DataRow
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skin.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skin.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skin.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skin.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.SkinID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.URI">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.SkinImage">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.SkinThumbNailImage">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.CreatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.CreatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.UpdatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.UpdatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.SystemTimeStamp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skin.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.SkinData">
+            <summary>
+            SkinData DataSet
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.#ctor">
+            <summary>
+            SkinData Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            SkinData Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.InitializeDerivedDataSet">
+            <summary>
+             Initialize the derived data set
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.Clone">
+            <summary>
+             Clone this dataset
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.ShouldSerializeTables">
+            <summary>
+             Should serialize the tables?
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.ShouldSerializeRelations">
+            <summary>
+             Should serialize Relations
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.ReadXmlSerializable(System.Xml.XmlReader)">
+            <summary>
+             Read the XML Serializable data
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinData.InitRelations">
+            <summary>
+             Initialize the relations
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinData.Skins">
+            <summary>
+            Skins Data
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinData.SkinLocations">
+            <summary>
+            SkinLocations Data
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinData.AppliedSkins">
+            <summary>
+            AppliedSkins Data
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinData.SchemaSerializationMode">
+            <summary>
+             Schema Serialization Mode
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinData.Tables">
+            <summary>
+             List of tables
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinData.Relations">
+            <summary>
+             List of relations
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.SkinLocation">
+            <summary>
+            SkinLocation DataRow
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocation.WriteDBValue(System.Data.DataColumn,System.Object)">
+            <summary>
+             Write the value of the column back to the data row
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocation.IsColumnModified(System.Data.DataColumn)">
+            <summary>
+             Is this column modified?
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocation.TransferTo(System.Data.DataRow)">
+            <summary>
+            Transfers the data from this row to the target row based on the SourceColumnMappings.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocation.TransferFrom(System.Data.DataRow)">
+            <summary>
+            Transfers the data from the target row to this row based on the SourceColumnMappings.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Item(System.Data.DataColumn)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Item(System.Int32)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Item(System.String)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Item(System.Data.DataColumn,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Item(System.Int32,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Item(System.String,System.Data.DataRowVersion)">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.SkinLocationID">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.LocationName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.SkinLocationType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.CreatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.CreatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.UpdatedByUser">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.UpdatedDate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.SystemTimeStamp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Table">
+            <summary>
+             Returns the typed object to which this object belongs
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.Modified">
+             <summary>
+             Determins if this object has been modified
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocation.SourceColumnMappings">
+            <summary>
+             Returns the mapping array when this object is defined in the model from 
+             another object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.SkinLocations">
+            <summary>
+            SkinLocations DataTable
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.#ctor">
+            <summary>
+             SkinLocations Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.#ctor(System.String)">
+            <summary>
+             SkinLocations Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Add(IQ.Core.Configuration.Transport.SkinLocation)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.FindBySkinLocationID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.SkinLocations.Remove(IQ.Core.Configuration.Transport.SkinLocation)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.SkinLocationIDColumn">
+            <summary>
+             Returns the defination of the SkinLocationID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.LocationNameColumn">
+            <summary>
+             Returns the defination of the LocationName Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.SkinLocationTypeColumn">
+            <summary>
+             Returns the defination of the SkinLocationType Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.CreatedByUserColumn">
+            <summary>
+             Returns the defination of the CreatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.CreatedDateColumn">
+            <summary>
+             Returns the defination of the CreatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.UpdatedByUserColumn">
+            <summary>
+             Returns the defination of the UpdatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.UpdatedDateColumn">
+            <summary>
+             Returns the defination of the UpdatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.SystemTimeStampColumn">
+            <summary>
+             Returns the defination of the SystemTimeStamp Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.SkinLocations.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+        <member name="T:IQ.Core.Configuration.Transport.Skins">
+            <summary>
+            Skins DataTable
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.#ctor">
+            <summary>
+             Skins Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Serialized Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.#ctor(System.String)">
+            <summary>
+             Skins Constructor
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.InitRelations(System.Data.DataSet)">
+            <summary>
+             Initialize relations for the dataset
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Select">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Select(System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Select(System.String,System.String)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Select(System.String,System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select an array of objects that match the filter expression provided
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.SelectSingleRow(System.String)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.SelectSingleRow(System.String,System.Data.DataViewRowState)">
+            <summary>
+             Select a single object based on the filter expression.  If more than one object
+             is found, it will throw an exception
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.NewDefaulted">
+            <summary>
+             New object that has default values
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Add">
+            <summary>
+             Add a new object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Add(IQ.Core.Configuration.Transport.Skin)">
+            <summary>
+             Adds a new typed object to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.FindBySkinID(System.Guid)">
+            <summary>
+             Finds the objects that are defined by the primary key(s)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Clone">
+            <summary>
+             Clones this object structor and data
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Copy">
+            <summary>
+             Copies this object structor only
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.CreateInstance">
+            <summary>
+             Create a new instance of this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.New">
+            <summary>
+             Returns a new object but doesn't add it to this object
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.NewRowFromBuilder(System.Data.DataRowBuilder)">
+            <summary>
+             Create a new value from the builder (Internal mechansim)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.GetRowType">
+            <summary>
+             Returns the type of the value (Internal mechanism)
+            </summary>
+        </member>
+        <member name="M:IQ.Core.Configuration.Transport.Skins.Remove(IQ.Core.Configuration.Transport.Skin)">
+            <summary>
+             Removes an object from this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.SkinIDColumn">
+            <summary>
+             Returns the defination of the SkinID Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.NameColumn">
+            <summary>
+             Returns the defination of the Name Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.URIColumn">
+            <summary>
+             Returns the defination of the URI Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.SkinImageColumn">
+            <summary>
+             Returns the defination of the SkinImage Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.SkinThumbNailImageColumn">
+            <summary>
+             Returns the defination of the SkinThumbNailImage Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.CreatedByUserColumn">
+            <summary>
+             Returns the defination of the CreatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.CreatedDateColumn">
+            <summary>
+             Returns the defination of the CreatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.UpdatedByUserColumn">
+            <summary>
+             Returns the defination of the UpdatedByUser Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.UpdatedDateColumn">
+            <summary>
+             Returns the defination of the UpdatedDate Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.SystemTimeStampColumn">
+            <summary>
+             Returns the defination of the SystemTimeStamp Column
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.Count">
+            <summary>
+             Returns the number of objects that are contained within this object
+            </summary>
+        </member>
+        <member name="P:IQ.Core.Configuration.Transport.Skins.Item(System.Int32)">
+            <summary>
+             Indexer for this object
+            </summary>
+        </member>
+    </members>
+</doc>
